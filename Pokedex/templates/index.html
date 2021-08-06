@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Poke</title>
+</head>
+<body>
+<center><h1>Pokemon</h1></center>
+
+
+<div class="container">
+    <center>
+  <table class="table">
+    <thead>
+      <tr>
+          <pre>
+               <th>Types Of Pokemon<br>
+               (S no.)
+               </th>
+          </pre>
+
+        <th>Name</th>
+      </tr>
+    </thead>
+    <tbody>
+    	{% for c in poke_type %}
+        <tr>
+        <td>{{forloop.counter}}</td>
+        <td>{{c.name}}</td>
+        </tr>
+        {% endfor %}
+
+
+    </tbody>
+  </table>
+    </center>
+</div>
+</body>
+</html>
