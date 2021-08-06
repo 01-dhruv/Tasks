@@ -2,7 +2,9 @@
 
 FIRST TASK
 
-Basic Word Counter 
+Basic Word Counter
+
+
 Here, By taking words as input from the user, we display back a number of things like  number of distinct words entered, number of occurences of each word entered in two different ways, most reapted word and the least repeated word.
 
 
