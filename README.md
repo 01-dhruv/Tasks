@@ -20,7 +20,11 @@ Here's a quick look to the output :
 SECOND TASK
 
 PokeAPI
+
+
 Tried my first API
+
+
 By using Public API for Pokedex, I was able to Successfully fetch all types of Pokemon and display them.
 
 
