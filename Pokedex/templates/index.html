@@ -6,6 +6,9 @@
 </head>
 <body>
 <center><h1>Pokemon</h1></center>
+<!--<pre>-->
+<!--    {{ result }}-->
+<!--</pre>-->
 
 
 <div class="container">
@@ -35,5 +38,53 @@
   </table>
     </center>
 </div>
+
+
+
+
+<hr>
+<br> <br> <br> <br>
+
+
+
+
+
+
+
+<div class="container">
+    <center>
+  <table class="table">
+    <thead>
+      <tr>
+        <th>S no.</th>
+        <th>Name</th>
+        <th>Image</th>
+        <th>Type</th>
+
+      </tr>
+    </thead>
+    <tbody>
+    	{% for c in ab %}
+        <tr>
+        <td>{{forloop.counter}}</td>
+        <td style="text-transform:uppercase">{{c.name}}</td>
+        <td><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/{{forloop.counter}}.png"></td>
+<!--&lt;!&ndash;<td>"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/{{forloop.counter}}.png"</td>&ndash;&gt;    How to Concatenate URL-->
+        <td>
+            {% for c in cd %}
+            <pre>{{ c.type.name }}</pre>
+            {% endfor %}
+        </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+  </table>
+    </center>
+</div>
+
+<br> <br> <br> <br>
+
+
+
 </body>
 </html>
